@@ -13,7 +13,6 @@ const app = express();
 const port = process.env.PORT || 4000;
 const dbURL = process.env.DB_URL;
 
-app.use(express.static(path.join(__dirname, "wellness360", "build")));
 app.use(express.json());
 app.use(cors({
   origin: 'http://localhost:3001', 
